@@ -1,0 +1,14 @@
+Package: timeAndPlate
+Type: Package
+Title: Extract Repeated Plate Reads from an Excel File
+Version: 0.1.1
+Date: 2023-05-26
+Authors@R: c(person("Bram", "Burger", role=c("aut", "cre"), email="of.course.i.still.love.you@skiff.com"),
+             person(c("Maaike", "S.A."), "Jongen", role=c("aut")))
+Imports: data.table, openxlsx
+Description: Repeated readouts from plates are not always easily extracted from the instrument or from its accompanying software. When plate reads are copied to an excel file (in one or more sheets), this is often easiest to do keeping the format of the plate. However, it is easier to process the data if each well has its readouts in a single column. Here we provide a function that converts the data in an excel file stored in plate-layout to a an excel (or csv) file with the readings in one column per well. Columns can be grouped by column or by row, to easily further process the data when replicate measurements were taken.
+License: GPL-3
+URL: https://github.com/bramburger/timeAndPlate
+BugReports: https://github.com/bramburger/timeAndPlate/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
